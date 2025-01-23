@@ -209,6 +209,14 @@ button {
     padding: 0px;
 }
 
+.adsbygoogle {
+  display: block;
+  width: 100%;
+  max-width: 300px; /* Ajusta según el tamaño del anuncio */
+  height: auto;
+}
+
+
 
 /* header section start */
 
