@@ -302,7 +302,7 @@
             <p class="copyright_text">2025 All Rights Reserved. Design by <a href="https://www.linkedin.com/in/lenin-larry-villanera-salda%C3%B1a-184803184/">Lenin Villanera</a></p>
          </div>
       </div>
-      <div style="position: fixed; bottom: 0px; display: flex;justify-content: center;flex-wrap: wrap; width: 100%; max-width: 300px; height: auto;">
+      <div style="position: fixed; bottom: 0px; display: flex;justify-content: center;flex-wrap: wrap; width: 100%; max-width: 100%; height: auto;">
          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2795471011984973"
      crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
@@ -312,7 +312,18 @@
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
+           // (adsbygoogle = window.adsbygoogle || []).push({});
+            var adContainer = document.querySelector('.adsbygoogle');
+            if (adContainer && adContainer.offsetWidth > 0) {
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            }
+            window.addEventListener('resize', function () {
+              var adContainer = document.querySelector('.adsbygoogle');
+              if (adContainer && adContainer.offsetWidth > 0) {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              }
+            });
+
       </script>
       </div>
       <script src="js/jquery.min.js"></script>
